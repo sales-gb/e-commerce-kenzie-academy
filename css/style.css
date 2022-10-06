@@ -51,14 +51,26 @@ header {
 }
 
 .menu ul li a:hover {
-  color: red;
+  color: rgba(255, 0, 0, 0.532);
   text-decoration: overline;
 }
 
-.homePage img {
-  background: #ffffff url("img/background-site.jpg") no-repeat center;
+.homePage {
+  background-image: url(../img/background-site.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   width: 98.9vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.homePage h1 {
+  padding-top: 6.3em;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.763);
+  font-family: "Peralta", cursive;
 }
 
 .product-list {
@@ -121,6 +133,10 @@ header {
   margin-top: 0.5em;
   font-size: 16px;
   text-transform: uppercase;
+}
+
+.product-list .products .products-info button:hover {
+  color: #000;
 }
 
 footer {
