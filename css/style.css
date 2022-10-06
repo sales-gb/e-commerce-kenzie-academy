@@ -1,0 +1,141 @@
+body {
+  background: #fff;
+  padding-top: 80px;
+}
+
+a {
+  font-family: "Syncopate", sans-serif;
+}
+
+p,
+h2,
+button {
+  font-family: "Merriweather", serif;
+}
+
+header {
+  background: #000;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.container {
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 13vh;
+}
+
+.menu h1 {
+  color: #fff;
+  font-family: "Peralta", cursive;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+}
+
+.menu ul li {
+  margin: auto 1em;
+}
+
+.menu ul li a {
+  color: #fff;
+}
+
+.menu ul li a:hover {
+  color: red;
+  text-decoration: overline;
+}
+
+.homePage img {
+  background: #ffffff url("img/background-site.jpg") no-repeat center;
+  width: 98.9vw;
+  height: 100vh;
+}
+
+.product-list {
+  margin: 4em auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-list .subtitle {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 4.5em;
+  text-transform: uppercase;
+}
+
+.product-list .products {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2em;
+  justify-content: space-between;
+}
+
+.product-list .products .products-info {
+  width: 25vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em auto;
+}
+
+.product-list .products .products-info .product-img {
+  width: 25vw;
+  height: 50vh;
+}
+
+.product-list .products .products-info p {
+  font-size: 15px;
+  text-align: center;
+}
+
+.product-list .products .products-info h2 {
+  font-size: 25px;
+  margin-top: 0.4em;
+}
+
+.product-list .products .products-info .brand {
+  width: 5vw;
+}
+
+.product-list .products .products-info button {
+  width: 23vw;
+  height: 5vh;
+  background: red;
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid transparent;
+  cursor: pointer;
+  margin-top: 0.5em;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+footer {
+  background: #000;
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  color: #fff;
+}
+
+footer p a {
+  color: #fff;
+  font-family: "Merriweather", serif;
+}
