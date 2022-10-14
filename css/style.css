@@ -32,7 +32,7 @@ header {
   height: 13vh;
 }
 
-.menu h1 {
+.menu h1 a {
   color: #fff;
   font-family: "Peralta", cursive;
 }
@@ -40,6 +40,7 @@ header {
 .menu ul {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .menu ul li {
@@ -53,6 +54,35 @@ header {
 .menu ul li a:hover {
   color: rgba(255, 0, 0, 0.532);
   text-decoration: overline;
+}
+
+.menu ul li p {
+  color: #fff;
+  font-family: "Peralta", cursive;
+  font-size: 1.4em;
+  cursor: pointer;
+}
+
+.menu ul li p:hover {
+  color: rgba(255, 0, 0, 0.532);
+  text-decoration: overline;
+}
+
+.menu ul li ul {
+  display: none;
+  position: absolute;
+  background: #000;
+  left: 0;
+  width: 8vw;
+}
+
+.menu ul li:hover ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu ul li ul li {
+  margin: 0.4em auto;
 }
 
 .homePage {
@@ -109,12 +139,12 @@ header {
 }
 
 .product-list .products .products-info p {
-  font-size: 15px;
+  font-size: 0.89em;
   text-align: center;
 }
 
 .product-list .products .products-info h2 {
-  font-size: 25px;
+  font-size: 1.5em;
   margin-top: 0.4em;
 }
 
@@ -131,7 +161,7 @@ header {
   border: 1px solid transparent;
   cursor: pointer;
   margin-top: 0.5em;
-  font-size: 16px;
+  font-size: 1em;
   text-transform: uppercase;
 }
 
@@ -154,4 +184,93 @@ footer p {
 footer p a {
   color: #fff;
   font-family: "Merriweather", serif;
+}
+
+@media (max-width: 700px) {
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+  }
+
+  .menu ul li p {
+    color: #fff;
+    font-family: "Peralta", cursive;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+  .menu ul li ul {
+    display: none;
+    position: absolute;
+    background: #000;
+    left: 0;
+    width: 15vw;
+  }
+
+  .menu ul li ul li a {
+    font-size: 0.8em;
+  }
+
+  .homePage {
+    background-image: url(../img/background-site.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .homePage h1 {
+    padding-top: 5.5em;
+    font-size: 1.1em;
+    color: rgba(255, 255, 255, 0.763);
+    font-family: "Peralta", cursive;
+  }
+
+  .product-list .products {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .product-list .products .products-info {
+    width: 70vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em auto;
+  }
+  .product-list .products .products-info .product-img {
+    width: 70vw;
+  }
+  .product-list .products .products-info p {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .product-list .products .products-info h2 {
+    font-size: 1.5em;
+    margin-top: 0.4em;
+  }
+
+  .product-list .products .products-info .brand {
+    width: 15vw;
+  }
+  .product-list .products .products-info button {
+    width: 50vw;
+    height: 5vh;
+    background: red;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid transparent;
+    cursor: pointer;
+    margin-top: 0.5em;
+    font-size: 1em;
+    text-transform: uppercase;
+  }
 }
