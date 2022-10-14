@@ -206,7 +206,7 @@ footer p a {
     position: absolute;
     background: #000;
     left: 0;
-    width: 15vw;
+    width: 20vw;
   }
 
   .menu ul li ul li a {
@@ -222,6 +222,7 @@ footer p a {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    margin-bottom: 1em;
   }
 
   .homePage h1 {
